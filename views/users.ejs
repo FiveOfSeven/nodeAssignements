@@ -1,0 +1,13 @@
+<%- include('includes/top') %>
+    <link rel="stylesheet" href="/css/ul.css">
+</head>
+<body>
+    <p>users ejs</p>
+    <%- include('includes/navigation') %>
+    <ul>
+        <% for (let user of userList) { %>
+            <li><%= user.name %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
